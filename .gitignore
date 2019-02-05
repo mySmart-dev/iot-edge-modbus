@@ -5,6 +5,8 @@ artifacts/
 **/Properties/launchSettings.json
 */modules/*/out
 */.vscode/settings.json
+.vscode
+.vs
 
 *_i.c
 *_p.c
