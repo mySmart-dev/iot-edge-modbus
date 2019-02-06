@@ -2,7 +2,7 @@
     "$schema-version": "0.0.1",
     "description": "",
     "image": {
-        "repository": "azureiotedge/modbus",
+        "repository": "russellleaimagecontainer.azurecr.io/modbus",
         "tag": {
             "version": "1.0.5",
             "platforms": {
