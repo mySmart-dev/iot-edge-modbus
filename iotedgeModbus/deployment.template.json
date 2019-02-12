@@ -107,7 +107,7 @@
                 "StartAddress": "400001",
                 "Count": "2",
                 "DisplayName": "Voltage(V)",
-                "CorrelationId": "Power Meter"
+                "CorrelationId": "1"
               },
               "Op01_2": {
                 "PollingInterval": "30000",
@@ -115,7 +115,7 @@
                 "StartAddress": "400003",
                 "Count": "3",
                 "DisplayName": "Voltage(V)",
-                "CorrelationId": "Power Meter"
+                "CorrelationId": "1"
               },
               "Op02_0": {
                 "PollingInterval": "30000",
@@ -123,7 +123,7 @@
                 "StartAddress": "400001",
                 "Count": "1",
                 "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "Water Meter"
+                "CorrelationId": "2"
               },
               "Op02_2": {
                 "PollingInterval": "30000",
@@ -131,7 +131,7 @@
                 "StartAddress": "400003",
                 "Count": "2",
                 "DisplayName": "Current(A)",
-                "CorrelationId": "Water Meter"
+                "CorrelationId": "2"
               },
               "Op02_9": {
                 "PollingInterval": "30000",
@@ -139,7 +139,7 @@
                 "StartAddress": "400010",
                 "Count": "5",
                 "DisplayName": "Power(W)",
-                "CorrelationId": "Water Meter"
+                "CorrelationId": "2"
               }
             }
           }
