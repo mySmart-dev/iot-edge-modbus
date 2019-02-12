@@ -82,7 +82,7 @@ Before running the module, proper configuration is required. Here is a sample co
       }
     },
     "Slave02": {
-      "SlaveConnection": "ttyS0",
+      "SlaveConnection": "/dev/ttyS0",
       "HwId": "PowerMeter-0a:01:01:01:01:02",
       "BaudRate": "9600",
       "DataBits": "8",
