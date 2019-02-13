@@ -11,7 +11,7 @@
             "registryCredentials": {
               "RussellleaImageContainer": {
                 "username": "$CONTAINER_REGISTRY_USERNAME_russellleaimagecontainerusername",
-                "password": "$CONTAINER_REGISTRY_PASSWORD_rusellleaimagecontainerpassword",
+                "password": "$CONTAINER_REGISTRY_PASSWORD_russellleaimagecontainerpassword",
                 "address": "russellleaimagecontainer.azurecr.io"
               }
             }
@@ -62,18 +62,7 @@
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "${MODULES.iotedgeModbus.amd64}",
-              "createOptions": {
-                "HostConfig": {
-                  "Devices": [
-                    {
-                      "PathOnHost": "/dev/ttyUSB0",
-                      "PathInContainer": "/dev/ttyUSB0",
-                      "CgroupPermissions": "rwm"
-                    }
-                  ]
-                }
-              }
+              "image": "${MODULES.iotedgeModbus.amd64}"
             }
           }
         }

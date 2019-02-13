@@ -287,7 +287,7 @@
                 Console.WriteLine(res);
 
                 ModbusOutValue value = new ModbusOutValue()
-                { DisplayName = x.DisplayName, Address = cell, Value = val };
+                { DisplayName = x.DisplayName, Address = cell, Value = val, Count = (count / 2).ToString() };
                 value_list.Add(value);
             }
 
@@ -960,6 +960,7 @@
         //public string OpName { get; set; }
         public string Address { get; set; }
         public string Value { get; set; }
+        public string Count {get; set; }
     }
 
     class ModbusInMessage
