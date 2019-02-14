@@ -62,7 +62,18 @@
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "${MODULES.iotedgeModbus.amd64}"
+              "image": "${MODULES.iotedgeModbus.amd64}",
+              "createOptions": {
+                "HostConfig": {
+                  "Devices": [
+                    {
+                      "PathOnHost": "/dev/ttyUSB0",
+                      "PathInContainer": "/dev/ttyUSB0",
+                      "CgroupPermissions": "rwm"
+                    }
+                  ]
+                }
+              }
             }
           }
         }
@@ -84,8 +95,13 @@
         "PublishInterval": "10000",
         "SlaveConfigs": {
           "Slave01": {
-            "SlaveConnection": "192.168.0.164",
+            "SlaveConnection": "/dev/ttyUSB0",
             "TcpPort": "502",
+            "BaudRate": "9600",
+            "DataBits": "8",
+            "StopBits": "1",
+            "Parity": "ODD",
+            "FlowControl": "NONE",
             "HwId": "RusselLea Modbus Master",
             "RetryCount": "5",
             "RetryInterval": "10000",
