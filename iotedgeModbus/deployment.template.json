@@ -49,8 +49,16 @@
                         "HostPort": "443"
                       }
                     ]
-                  }
+                  },
+                  "Binds":[
+                    "/etc/iotedge/offlineStorage/:/iotedge/storage/"
+                  ]
                 }
+              }
+            },
+            "env": {
+              "storageFolder": {
+                  "value": "/iotedge/storage/"
               }
             }
           }
@@ -86,7 +94,7 @@
           "modbusToIoTHub": "FROM /messages/modules/modbus/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
-          "timeToLiveSecs": 7200
+          "timeToLiveSecs": 10800
         }
       }
     },
