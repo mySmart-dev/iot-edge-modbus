@@ -100,7 +100,7 @@
     },
     "modbus": {
       "properties.desired": {
-        "PublishInterval": "10000",
+        "PublishInterval": "60000",
         "SlaveConfigs": {
           "Slave01": {
             "SlaveConnection": "/dev/ttyUSB0",
@@ -115,7 +115,7 @@
             "RetryInterval": "10000",
             "Operations": {
               "Op01_0": {
-                "PollingInterval": "30000",
+                "PollingInterval": "300000",
                 "UnitId": "1",
                 "StartAddress": "400001",
                 "Count": "2",
@@ -123,36 +123,276 @@
                 "CorrelationId": "1"
               },
               "Op01_2": {
-                "PollingInterval": "30000",
+                "PollingInterval": "300000",
                 "UnitId": "1",
                 "StartAddress": "400003",
-                "Count": "3",
+                "Count": "2",
                 "DisplayName": "Voltage(V)",
                 "CorrelationId": "1"
               },
               "Op02_0": {
-                "PollingInterval": "30000",
+                "PollingInterval": "300000",
                 "UnitId": "2",
                 "StartAddress": "400001",
-                "Count": "1",
+                "Count": "2",
                 "DisplayName": "Waterlevel(mm)",
                 "CorrelationId": "2"
               },
               "Op02_2": {
-                "PollingInterval": "30000",
+                "PollingInterval": "300000",
                 "UnitId": "2",
                 "StartAddress": "400003",
                 "Count": "2",
                 "DisplayName": "Current(A)",
                 "CorrelationId": "2"
               },
-              "Op02_9": {
-                "PollingInterval": "30000",
+              "Op02_10": {
+                "PollingInterval": "300000",
                 "UnitId": "2",
-                "StartAddress": "400010",
-                "Count": "5",
+                "StartAddress": "400011",
+                "Count": "4",
                 "DisplayName": "Power(W)",
                 "CorrelationId": "2"
+              },
+              "Op03_0": {
+                "PollingInterval": "300000",
+                "UnitId": "3",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "PowerFactor(Degrees)",
+                "CorrelationId": "3"
+              },
+              "Op03_2": {
+                "PollingInterval": "300000",
+                "UnitId": "3",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "ReactivePower(VAr)",
+                "CorrelationId": "3"
+              },
+              "Op04_4": {
+                "PollingInterval": "300000",
+                "UnitId": "4",
+                "StartAddress": "300005",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "4"
+              },
+              "Op04_6": {
+                "PollingInterval": "300000",
+                "UnitId": "4",
+                "StartAddress": "300007",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "4"
+              },
+              "Op04_10": {
+                "PollingInterval": "300000",
+                "UnitId": "4",
+                "StartAddress": "300011",
+                "Count": "2",
+                "DisplayName": "ReactiveEnergy(kVArh)",
+                "CorrelationId": "4"
+              },
+              "Op05_0": {
+                "PollingInterval": "300000",
+                "UnitId": "5",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "5"
+              },
+              "Op05_2": {
+                "PollingInterval": "300000",
+                "UnitId": "5",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "5"
+              },
+              "Op06_8": {
+                "PollingInterval": "300000",
+                "UnitId": "6",
+                "StartAddress": "300009",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "6"
+              },
+              "Op06_10": {
+                "PollingInterval": "300000",
+                "UnitId": "6",
+                "StartAddress": "300011",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "6"
+              },
+              "Op06_12": {
+                "PollingInterval": "300000",
+                "UnitId": "6",
+                "StartAddress": "300013",
+                "Count": "2",
+                "DisplayName": "Power(W)",
+                "CorrelationId": "6"
+              },
+              "Op07_24": {
+                "PollingInterval": "300000",
+                "UnitId": "7",
+                "StartAddress": "300025",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "7"
+              },
+              "Op07_26": {
+                "PollingInterval": "300000",
+                "UnitId": "7",
+                "StartAddress": "300027",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "7"
+              },
+              "Op08_0": {
+                "PollingInterval": "300000",
+                "UnitId": "8",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "8"
+              },
+              "Op08_2": {
+                "PollingInterval": "300000",
+                "UnitId": "8",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "8"
+              },
+              "Op08_8": {
+                "PollingInterval": "300000",
+                "UnitId": "8",
+                "StartAddress": "300009",
+                "Count": "2",
+                "DisplayName": "VoltageTHD(%)",
+                "CorrelationId": "8"
+              },
+              "Op09_0": {
+                "PollingInterval": "300000",
+                "UnitId": "9",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "9"
+              },
+              "Op09_2": {
+                "PollingInterval": "300000",
+                "UnitId": "9",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "9"
+              },
+              "Op10_258": {
+                "PollingInterval": "300000",
+                "UnitId": "10",
+                "StartAddress": "300259",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "10"
+              },
+              "Op10_260": {
+                "PollingInterval": "300000",
+                "UnitId": "10",
+                "StartAddress": "300261",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "10"
+              },
+              "Op10_262": {
+                "PollingInterval": "300000",
+                "UnitId": "10",
+                "StartAddress": "300263",
+                "Count": "2",
+                "DisplayName": "PowerDemand(VA)",
+                "CorrelationId": "10"
+              },
+              "Op011_4": {
+                "PollingInterval": "300000",
+                "UnitId": "11",
+                "StartAddress": "300005",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "11"
+              },
+              "Op011_6": {
+                "PollingInterval": "300000",
+                "UnitId": "11",
+                "StartAddress": "300007",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "11"
+              },
+              "Op12_0": {
+                "PollingInterval": "300000",
+                "UnitId": "12",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "12"
+              },
+              "Op12_2": {
+                "PollingInterval": "300000",
+                "UnitId": "12",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "12"
+              },
+              "Op12_10": {
+                "PollingInterval": "300000",
+                "UnitId": "12",
+                "StartAddress": "300011",
+                "Count": "2",
+                "DisplayName": "Power(W)",
+                "CorrelationId": "12"
+              },
+              "Op13_0": {
+                "PollingInterval": "300000",
+                "UnitId": "13",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "13"
+              },
+              "Op013_2": {
+                "PollingInterval": "300000",
+                "UnitId": "13",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Voltage(V)",
+                "CorrelationId": "13"
+              },
+              "Op14_0": {
+                "PollingInterval": "300000",
+                "UnitId": "14",
+                "StartAddress": "300001",
+                "Count": "2",
+                "DisplayName": "Waterlevel(mm)",
+                "CorrelationId": "14"
+              },
+              "Op14_2": {
+                "PollingInterval": "300000",
+                "UnitId": "14",
+                "StartAddress": "300003",
+                "Count": "2",
+                "DisplayName": "Current(A)",
+                "CorrelationId": "14"
+              },
+              "Op14_10": {
+                "PollingInterval": "300000",
+                "UnitId": "14",
+                "StartAddress": "300011",
+                "Count": "2",
+                "DisplayName": "Power(W)",
+                "CorrelationId": "14"
               }
             }
           }
