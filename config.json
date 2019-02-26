@@ -1,0 +1,208 @@
+{
+  "version": "3.0.3",
+
+  /* Speficy protocol type: "RTU" or "TCP" */
+  "mode": "RTU",
+
+  /* Serial port settings (for RTU mode only) */
+  "port": {
+    "name": "COM11",
+    "baudRate": 9600,
+    "dataBits": 8,
+    "parity": "ODD",
+    "stopBits": 1
+  },
+
+  /* Frame Delay Override */
+  /* the amount of time in ms at the end of the frame (null for default) */
+  "frameDelay": null,
+
+  /* TCP port number (for TCP) */
+  "tcpPort": 502,
+
+  "slaves": {
+    "1": {
+      /* An 'online' slave will respond to Modbus requests.  */
+      /* Slaves not listed in this configuration file are offline by default.  */
+      "isOnline": true,
+
+      /* List of registers of the slave. */
+      /* Any registers not listed here have default value of '0' or 'false'. */
+      "registers": {
+
+        /* Setup Holding Registers as decimal numbers */
+        "HR0": 12,
+        "HR1": 15,
+        "HR2": 3,
+		    "HR3": 20,
+
+        /* Use '0x' prefix to specify hexadecimal numbers */
+        "HR10": "0x0A",
+        "HR11": "0x0B",
+        "HR12": "0x0C",
+        "HR13": "0xFFFF",
+        "HR14": "0x1234",
+
+        /* Setup Modbus exception response */
+        "HR999": { "exception": 3 },
+
+        /* Setup Input Registers */
+        "IR1": 1,
+        "IR2": 2,
+
+        /* Setup Coils*/
+        "C0": false,
+        "C1": true,
+
+        /* Setup Discrete Inputs*/
+        "DI1": true,
+        "DI2": false
+      }
+    },
+    "2": {
+      /* When the slave is not online, it will not respond */
+      "isOnline": true,
+      "registers": {
+        "HR0": 10,
+        "HR1": 44,
+        "HR2": 32,
+        "HR3": "0x93",
+
+        /* Use '0x' prefix to specify hexadecimal numbers */
+        "HR10": "0x06",
+        "HR11": "0x0DF",
+        "HR12": "0x24",
+        "HR13": "0xF7",
+        "HR14": "0x14"
+      }
+    },
+    "3": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 8,
+        "IR1": 10,
+        "IR2": 4,
+        "IR3": "0x54"
+      }
+    },
+    "4": {
+      "isOnline": true,
+      "registers": {
+        "IR4": 6,
+        "IR5": 7,
+        "IR6": "0xF",
+        "IR7": "0xAC",
+        "IR10": "0x6",
+        "IR11": "0xED"
+      }
+    },
+    "5": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 24,
+        "IR1": 56,
+        "IR2": 6,
+        "IR3": "0x74"
+      }
+    },
+    "6": {
+      "isOnline": true,
+      "registers": {
+        "IR8": 2,
+        "IR9": 9,
+        "IR10": "0xDE",
+        "IR11": "0xC6",
+        "IR12": 1,
+        "IR13": 3
+      }
+    },
+    "7": {
+      "isOnline": true,
+      "registers": {
+        "IR24": 22,
+        "IR25": 1,
+        "IR26": 25,
+        "IR27": "0x3"
+      }
+    },
+    "8": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 6,
+        "IR1": 7,
+        "IR2": "0xF",
+        "IR3": "0xAC",
+        "IR8": 78,
+        "IR9": 3
+      }
+    },
+    "9": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 8,
+        "IR1": 10,
+        "IR2": 2,
+        "IR3": "0x23"
+      }
+    },
+    "10": {
+      "isOnline": true,
+      "registers": {
+        "IR258": 6,
+        "IR259": 7,
+        "IR260": "0xF3",
+        "IR261": "0xBC",
+        "IR262": 4,
+        "IR263": 12
+      }
+    },
+    "11": {
+      "isOnline": true,
+      "registers": {
+        "IR4": 6,
+        "IR5": 11,
+        "IR6": 24,
+        "IR7": "0x14"
+      }
+    },
+    "12": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 6,
+        "IR1": 7,
+        "IR2": "0xD",
+        "IR3": "0xC",
+        "IR10": 5,
+        "IR11": 28
+      }
+    },
+    "13": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 8,
+        "IR1": 10,
+        "IR2": 4,
+        "IR3": "0x54"
+      }
+    },
+    "14": {
+      "isOnline": true,
+      "registers": {
+        "IR0": 4,
+        "IR1": 18,
+        "IR2": "0xF",
+        "IR3": "0xAC",
+        "IR10": "0x95",
+        "IR11": "0xA8"
+      }
+    }
+  },
+
+  /* HTTP API settings */
+  /* use the API to modify configuration at runtime */
+  "api": {
+    /* set to 'true' to enable the API endpoint */
+    "enable": true,
+    "port": 9000
+  }
+}
