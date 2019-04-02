@@ -9,10 +9,10 @@
             "minDockerVersion": "v1.25",
             "loggingOptions": "",
             "registryCredentials": {
-              "RussellleaImageContainer": {
-                "username": "$CONTAINER_REGISTRY_USERNAME_russellleaimagecontainerusername",
-                "password": "$CONTAINER_REGISTRY_PASSWORD_russellleaimagecontainerpassword",
-                "address": "russellleaimagecontainer.azurecr.io"
+              "LiveCommunalContainerRegistry": {
+                "username": "$CONTAINER_REGISTRY_USERNAME_LiveCommunalContainerRegistryusername",
+                "password": "$CONTAINER_REGISTRY_PASSWORD_LiveCommunalContainerRegistrypassword",
+                "address": "livecommunalcontainerregistry.azurecr.io"
               }
             }
           }
