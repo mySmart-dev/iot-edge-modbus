@@ -227,6 +227,12 @@
             {
                 x.Response = null;
                 x.Response = await SendRequest(x.Request, x.RequestLen);
+                System.Console.WriteLine($"Sending Modbus request, Correlation id: {x.CorrelationId}, Address: {x.Address}");
+                for(int i = 0; i < x.RequestLen; i++)
+                {
+                    System.Console.Write($"{x.Request[i]} ");
+                }
+                System.Console.Write("\n");
 
                 if (x.Response != null)
                 {
@@ -238,6 +244,10 @@
                     {
                         Console.WriteLine($"Modbus exception code: {x.Response[m_dataBodyOffset + 1]}");
                     }
+                }
+                else 
+                {
+                    Console.WriteLine($"Null response received for Correlation id: {x.CorrelationId}, Address: {x.Address}");
                 }
                 await Task.Delay(x.PollingInterval - m_silent);
             }
@@ -284,7 +294,7 @@
                     val = string.Format("{0,00000}", ((x.Response[m_dataBodyOffset + 2 + i]) * 0x100 + x.Response[m_dataBodyOffset + 3 + i]));
                 }
                 res = cell + ": " + val + "\n";
-                Console.WriteLine(res);
+                Console.WriteLine($"Correlation Id: {x.CorrelationId}, {res}");
 
                 ModbusOutValue value = new ModbusOutValue()
                 { DisplayName = x.DisplayName, Address = cell, Value = val, Count = (count / 2).ToString() };
