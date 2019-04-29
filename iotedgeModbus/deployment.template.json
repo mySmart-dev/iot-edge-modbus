@@ -115,292 +115,660 @@
             "RetryInterval": "10000",
             "Operations": {
               "Op01_0": {
-                "PollingInterval": "60000",
-                "UnitId": "1",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "1"
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300001",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Voltage (V)",
+                 "CorrelationId": "1"
               },
               "Op01_2": {
-                "PollingInterval": "60000",
-                "UnitId": "1",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "1"
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300003",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_4": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300005",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_6": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300007",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Current (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_8": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300009",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Current (A)",
+                 "CorrelationId": "1"
               },
               "Op01_10": {
-                "PollingInterval": "60000",
-                "UnitId": "1",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "1"
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300011",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Current (A)",
+                 "CorrelationId": "1"
               },
-              "Op02_0": {
-                "PollingInterval": "60000",
-                "UnitId": "2",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "2"
+              "Op01_12": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300013",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Active Power (W)",
+                 "CorrelationId": "1"
               },
-              "Op02_2": {
-                "PollingInterval": "60000",
-                "UnitId": "2",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "2"
+              "Op01_14": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300015",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Active Power (W)",
+                 "CorrelationId": "1"
               },
-              "Op02_10": {
-                "PollingInterval": "60000",
-                "UnitId": "2",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "Power(W)",
-                "CorrelationId": "2"
+              "Op01_16": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300017",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Active Power (W)",
+                 "CorrelationId": "1"
               },
-              "Op03_0": {
-                "PollingInterval": "60000",
-                "UnitId": "3",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "PowerFactor(Degrees)",
-                "CorrelationId": "3"
+              "Op01_18": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300019",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Apparent Power (VA)",
+                 "CorrelationId": "1"
               },
-              "Op03_2": {
-                "PollingInterval": "60000",
-                "UnitId": "3",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "ReactivePower(VAr)",
-                "CorrelationId": "3"
+              "Op01_20": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300021",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Apparent Power (VA)",
+                 "CorrelationId": "1"
               },
-              "Op04_4": {
-                "PollingInterval": "60000",
-                "UnitId": "4",
-                "StartAddress": "300005",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "4"
+              "Op01_22": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300023",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Apparent Power (VA)",
+                 "CorrelationId": "1"
               },
-              "Op04_6": {
-                "PollingInterval": "60000",
-                "UnitId": "4",
-                "StartAddress": "300007",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "4"
+              "Op01_24": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300025",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Reactive Power (VAr)",
+                 "CorrelationId": "1"
               },
-              "Op04_10": {
-                "PollingInterval": "60000",
-                "UnitId": "4",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "ReactiveEnergy(kVArh)",
-                "CorrelationId": "4"
+              "Op01_26": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300027",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Reactive Power (VAr)",
+                 "CorrelationId": "1"
               },
-              "Op05_0": {
-                "PollingInterval": "60000",
-                "UnitId": "5",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "5"
+              "Op01_28": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300029",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Reactive Power (VAr)",
+                 "CorrelationId": "1"
               },
-              "Op05_2": {
-                "PollingInterval": "60000",
-                "UnitId": "5",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "5"
+              "Op01_30": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300031",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Power Factor (None)",
+                 "CorrelationId": "1"
               },
-              "Op06_8": {
-                "PollingInterval": "60000",
-                "UnitId": "6",
-                "StartAddress": "300009",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "6"
+              "Op01_32": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300033",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Power Factor (None)",
+                 "CorrelationId": "1"
               },
-              "Op06_10": {
-                "PollingInterval": "60000",
-                "UnitId": "6",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "6"
+              "Op01_34": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300035",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Power Factor (None)",
+                 "CorrelationId": "1"
               },
-              "Op06_12": {
-                "PollingInterval": "60000",
-                "UnitId": "6",
-                "StartAddress": "300013",
-                "Count": "2",
-                "DisplayName": "Power(W)",
-                "CorrelationId": "6"
+              "Op01_36": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300037",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Power Factor Phase Angle (Degrees)",
+                 "CorrelationId": "1"
               },
-              "Op07_24": {
-                "PollingInterval": "60000",
-                "UnitId": "7",
-                "StartAddress": "300025",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "7"
+              "Op01_38": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300039",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Power Factor Phase Angle (Degrees)",
+                 "CorrelationId": "1"
               },
-              "Op07_26": {
-                "PollingInterval": "60000",
-                "UnitId": "7",
-                "StartAddress": "300027",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "7"
+              "Op01_40": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300041",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Power Factor Phase Angle (Degrees)",
+                 "CorrelationId": "1"
               },
-              "Op08_0": {
-                "PollingInterval": "60000",
-                "UnitId": "8",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "8"
+              "Op01_42": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300043",
+                 "Count": "2",
+                 "DisplayName": "Average Phase Voltage (V)",
+                 "CorrelationId": "1"
               },
-              "Op08_2": {
-                "PollingInterval": "60000",
-                "UnitId": "8",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "8"
+              "Op01_46": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300047",
+                 "Count": "2",
+                 "DisplayName": "Average Phase Current (A)",
+                 "CorrelationId": "1"
               },
-              "Op08_8": {
-                "PollingInterval": "60000",
-                "UnitId": "8",
-                "StartAddress": "300009",
-                "Count": "2",
-                "DisplayName": "VoltageTHD(%)",
-                "CorrelationId": "8"
+              "Op01_48": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "1"
               },
-              "Op09_0": {
-                "PollingInterval": "60000",
-                "UnitId": "9",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "9"
+              "Op01_52": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "1"
               },
-              "Op09_2": {
-                "PollingInterval": "60000",
-                "UnitId": "9",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "9"
+              "Op01_56": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "1"
               },
-              "Op10_258": {
-                "PollingInterval": "60000",
-                "UnitId": "10",
-                "StartAddress": "300259",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "10"
+              "Op01_60": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "1"
               },
-              "Op10_260": {
-                "PollingInterval": "60000",
-                "UnitId": "10",
-                "StartAddress": "300261",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "10"
+              "Op01_62": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300063",
+                 "Count": "2",
+                 "DisplayName": "Total Power Factor (None)",
+                 "CorrelationId": "1"
               },
-              "Op10_262": {
-                "PollingInterval": "60000",
-                "UnitId": "10",
-                "StartAddress": "300263",
-                "Count": "2",
-                "DisplayName": "PowerDemand(VA)",
-                "CorrelationId": "10"
+              "Op01_66": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300067",
+                 "Count": "2",
+                 "DisplayName": "Total Power Factor Phase Angle (Degrees)",
+                 "CorrelationId": "1"
               },
-              "Op011_4": {
-                "PollingInterval": "60000",
-                "UnitId": "11",
-                "StartAddress": "300005",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "11"
+              "Op01_70": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "1"
               },
-              "Op011_6": {
-                "PollingInterval": "60000",
-                "UnitId": "11",
-                "StartAddress": "300007",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "11"
+              "Op01_72": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300073",
+                 "Count": "2",
+                 "DisplayName": "Import Active Energy (kWh)",
+                 "CorrelationId": "1"
               },
-              "Op12_0": {
-                "PollingInterval": "60000",
-                "UnitId": "12",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "12"
+              "Op01_74": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300075",
+                 "Count": "2",
+                 "DisplayName": "Export Active Energy (kWh)",
+                 "CorrelationId": "1"
               },
-              "Op12_2": {
-                "PollingInterval": "60000",
-                "UnitId": "12",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "12"
+              "Op01_76": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300077",
+                 "Count": "2",
+                 "DisplayName": "Import Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
               },
-              "Op12_10": {
-                "PollingInterval": "60000",
-                "UnitId": "12",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "Power(W)",
-                "CorrelationId": "12"
+              "Op01_78": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300079",
+                 "Count": "2",
+                 "DisplayName": "Export Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
               },
-              "Op13_0": {
-                "PollingInterval": "60000",
-                "UnitId": "13",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "13"
+              "Op01_84": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300085",
+                 "Count": "2",
+                 "DisplayName": "Active Power Demand (W)",
+                 "CorrelationId": "1"
               },
-              "Op013_2": {
-                "PollingInterval": "60000",
-                "UnitId": "13",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Voltage(V)",
-                "CorrelationId": "13"
+              "Op01_86": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300087",
+                 "Count": "2",
+                 "DisplayName": "Maximum Active Power Demand (W)",
+                 "CorrelationId": "1"
               },
-              "Op14_0": {
-                "PollingInterval": "60000",
-                "UnitId": "14",
-                "StartAddress": "300001",
-                "Count": "2",
-                "DisplayName": "Waterlevel(mm)",
-                "CorrelationId": "14"
+              "Op01_100": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300101",
+                 "Count": "2",
+                 "DisplayName": "Apparent Power Demand (VA)",
+                 "CorrelationId": "1"
               },
-              "Op14_2": {
-                "PollingInterval": "60000",
-                "UnitId": "14",
-                "StartAddress": "300003",
-                "Count": "2",
-                "DisplayName": "Current(A)",
-                "CorrelationId": "14"
+              "Op01_102": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300103",
+                 "Count": "2",
+                 "DisplayName": "Maximum Apparent Power Demand (VA)",
+                 "CorrelationId": "1"
               },
-              "Op14_10": {
-                "PollingInterval": "60000",
-                "UnitId": "14",
-                "StartAddress": "300011",
-                "Count": "2",
-                "DisplayName": "Power(W)",
-                "CorrelationId": "14"
+              "Op01_104": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300105",
+                 "Count": "2",
+                 "DisplayName": "Neutral Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_106": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300107",
+                 "Count": "2",
+                 "DisplayName": "Maximum Neutral Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_200": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300201",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 to Phase 2 Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_202": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300203",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 to Phase 3 Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_204": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300205",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 to Phase 1 Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_206": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300207",
+                 "Count": "2",
+                 "DisplayName": "Average Phase to Phase Voltage (V)",
+                 "CorrelationId": "1"
+              },
+              "Op01_224": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300225",
+                 "Count": "2",
+                 "DisplayName": "Neutral Current (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_234": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300235",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_236": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300237",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_238": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300239",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_240": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300241",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Current THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_242": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300243",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Current THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_244": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300245",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Current THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_248": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300249",
+                 "Count": "2",
+                 "DisplayName": "Average Phase Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_258": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300259",
+                 "Count": "2",
+                 "DisplayName": "Average Phase Current THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_260": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300261",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_262": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300263",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_264": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300265",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_266": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300267",
+                 "Count": "2",
+                 "DisplayName": "Maximum Phase 1 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_268": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300269",
+                 "Count": "2",
+                 "DisplayName": "Maximum Phase 2 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_334": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300335",
+                 "Count": "2",
+                 "DisplayName": "Maximum Phase 3 Current Demand (A)",
+                 "CorrelationId": "1"
+              },
+              "Op01_336": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300337",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 to Phase 2 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_338": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300339",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 to Phase 3 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_340": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300341",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 to Phase 1 Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_342": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300343",
+                 "Count": "2",
+                 "DisplayName": "Average Phase to Phase Voltage THD (%)",
+                 "CorrelationId": "1"
+              },
+              "Op01_344": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300345",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_346": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300347",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_348": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300349",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Import Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_350": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300351",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Import Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_352": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300353",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Import Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_354": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300355",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Export Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_356": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300357",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Export Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_358": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300359",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Export Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_360": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300361",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Total Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_362": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300363",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Total Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_364": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300365",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Total Active Energy (kWh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_366": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300367",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Import Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_368": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300369",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Import Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_370": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300371",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Import Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_372": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300373",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Export Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_374": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300375",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Export Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_376": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300377",
+                 "Count": "2",
+                 "DisplayName": "Phase 3 Export Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_378": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300379",
+                 "Count": "2",
+                 "DisplayName": "Phase 1 Total Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
+              },
+              "Op01_380": {
+                 "PollingInterval": "60000",
+                 "UnitId": "1",
+                 "StartAddress": "300381",
+                 "Count": "2",
+                 "DisplayName": "Phase 2 Total Reactive Energy (kVArh)",
+                 "CorrelationId": "1"
               }
             }
           }
