@@ -114,173 +114,53 @@
             "RetryCount": "5",
             "RetryInterval": "10000",
             "Operations": {
-              "Op01_42": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30043",
-                 "Count": "2",
-                 "DisplayName": "Average Phase Voltage (V)",
-                 "CorrelationId": "1"
-              },
-              "Op01_46": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30047",
-                 "Count": "2",
-                 "DisplayName": "Average Phase Current (A)",
-                 "CorrelationId": "1"
-              },
               "Op01_48": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30049",
                  "Count": "2",
                  "DisplayName": "Total Phase Currents (A)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               },
               "Op01_52": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30053",
                  "Count": "2",
                  "DisplayName": "Total Active Power (W)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               },
               "Op01_56": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30057",
                  "Count": "2",
                  "DisplayName": "Total Apparent Power (VA)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               },
               "Op01_60": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30061",
                  "Count": "2",
                  "DisplayName": "Total Reactive Power (VAr)",
-                 "CorrelationId": "1"
-              },
-              "Op01_62": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30063",
-                 "Count": "2",
-                 "DisplayName": "Total Power Factor (None)",
-                 "CorrelationId": "1"
-              },
-              "Op01_66": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30067",
-                 "Count": "2",
-                 "DisplayName": "Total Power Factor Phase Angle (Degrees)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               },
               "Op01_70": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30071",
                  "Count": "2",
                  "DisplayName": "Frequency (Hz)",
-                 "CorrelationId": "1"
-              },
-              "Op01_84": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30085",
-                 "Count": "2",
-                 "DisplayName": "Active Power Demand (W)",
-                 "CorrelationId": "1"
-              },
-              "Op01_86": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30087",
-                 "Count": "2",
-                 "DisplayName": "Maximum Active Power Demand (W)",
-                 "CorrelationId": "1"
-              },
-              "Op01_100": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30101",
-                 "Count": "2",
-                 "DisplayName": "Apparent Power Demand (VA)",
-                 "CorrelationId": "1"
-              },
-              "Op01_102": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30103",
-                 "Count": "2",
-                 "DisplayName": "Maximum Apparent Power Demand (VA)",
-                 "CorrelationId": "1"
-              },
-              "Op01_104": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30105",
-                 "Count": "2",
-                 "DisplayName": "Neutral Current Demand (A)",
-                 "CorrelationId": "1"
-              },
-              "Op01_106": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30107",
-                 "Count": "2",
-                 "DisplayName": "Maximum Neutral Current Demand (A)",
-                 "CorrelationId": "1"
-              },
-              "Op01_224": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30225",
-                 "Count": "2",
-                 "DisplayName": "Neutral Current (A)",
-                 "CorrelationId": "1"
-              },
-              "Op01_248": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30249",
-                 "Count": "2",
-                 "DisplayName": "Average Phase Voltage THD (%)",
-                 "CorrelationId": "1"
-              },
-              "Op01_250": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30251",
-                 "Count": "2",
-                 "DisplayName": "Average Phase Current THD (%)",
-                 "CorrelationId": "1"
-              },
-              "Op01_340": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30341",
-                 "Count": "2",
-                 "DisplayName": "Average Phase to Phase Voltage THD (%)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               },
               "Op01_342": {
                  "PollingInterval": "60000",
-                 "UnitId": "1",
+                 "UnitId": "2",
                  "StartAddress": "30343",
                  "Count": "2",
                  "DisplayName": "Total Active Energy (kWh)",
-                 "CorrelationId": "1"
-              },
-              "Op01_344": {
-                 "PollingInterval": "60000",
-                 "UnitId": "1",
-                 "StartAddress": "30345",
-                 "Count": "2",
-                 "DisplayName": "Total Reactive Energy (kVArh)",
-                 "CorrelationId": "1"
+                 "CorrelationId": "2"
               }
             }
           }
