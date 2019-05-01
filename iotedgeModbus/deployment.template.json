@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus22": {
+          "modbus20": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus22/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus20/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus22": {
+    "modbus20": {
       "properties.desired": {
         "PublishInterval": "60000",
         "SlaveConfigs": {
@@ -114,21 +114,53 @@
             "RetryCount": "5",
             "RetryInterval": "10000",
             "Operations": {
-              "Op11_825": {
-                "PollingInterval": "10000",
-                "UnitId": "11",
-                "StartAddress": "34134",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "11"
+              "Op10_70": {
+                 "PollingInterval": "10000",
+                 "UnitId": "10",
+                 "StartAddress": "30071",
+                 "Count": "4",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "10"
               },
-              "Op11_826": {
+              "Op10_71": {
                 "PollingInterval": "10000",
-                "UnitId": "11",
-                "StartAddress": "34135",
+                "UnitId": "10",
+                "StartAddress": "30070",
                 "Count": "4",
                 "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "11"
+                "CorrelationId": "10"
+              },
+              "Op02_48": {
+                "PollingInterval": "10000",
+                "UnitId": "2",
+                "StartAddress": "30049",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "2"
+              },
+              "Op02_49": {
+                "PollingInterval": "10000",
+                "UnitId": "2",
+                "StartAddress": "30048",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "2"
+              },
+              "Op04_56": {
+                "PollingInterval": "10000",
+                "UnitId": "4",
+                "StartAddress": "30057",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "4"
+              },
+              "Op04_57": {
+                "PollingInterval": "10000",
+                "UnitId": "4",
+                "StartAddress": "30056",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "4"
               }
             }
           }
