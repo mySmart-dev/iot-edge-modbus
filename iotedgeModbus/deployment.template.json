@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus": {
+          "modbus22": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus22/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus": {
+    "modbus22": {
       "properties.desired": {
         "PublishInterval": "60000",
         "SlaveConfigs": {
@@ -108,59 +108,27 @@
             "BaudRate": "9600",
             "DataBits": "8",
             "StopBits": "1",
-            "Parity": "ODD",
+            "Parity": "NONE",
             "FlowControl": "NONE",
             "HwId": "RusselLea Modbus Master",
             "RetryCount": "5",
             "RetryInterval": "10000",
             "Operations": {
-              "Op01_48": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30049",
-                 "Count": "2",
-                 "DisplayName": "Total Phase Currents (A)",
-                 "CorrelationId": "2"
+              "Op11_825": {
+                "PollingInterval": "10000",
+                "UnitId": "11",
+                "StartAddress": "34134",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "11"
               },
-              "Op01_52": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30053",
-                 "Count": "2",
-                 "DisplayName": "Total Active Power (W)",
-                 "CorrelationId": "2"
-              },
-              "Op01_56": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30057",
-                 "Count": "2",
-                 "DisplayName": "Total Apparent Power (VA)",
-                 "CorrelationId": "2"
-              },
-              "Op01_60": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30061",
-                 "Count": "2",
-                 "DisplayName": "Total Reactive Power (VAr)",
-                 "CorrelationId": "2"
-              },
-              "Op01_70": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30071",
-                 "Count": "2",
-                 "DisplayName": "Frequency (Hz)",
-                 "CorrelationId": "2"
-              },
-              "Op01_342": {
-                 "PollingInterval": "60000",
-                 "UnitId": "2",
-                 "StartAddress": "30343",
-                 "Count": "2",
-                 "DisplayName": "Total Active Energy (kWh)",
-                 "CorrelationId": "2"
+              "Op11_826": {
+                "PollingInterval": "10000",
+                "UnitId": "11",
+                "StartAddress": "34135",
+                "Count": "4",
+                "DisplayName": "Frequency (Hz)",
+                "CorrelationId": "11"
               }
             }
           }

@@ -226,13 +226,22 @@
             while (m_run)
             {
                 x.Response = null;
-                x.Response = await SendRequest(x.Request, x.RequestLen);
-                System.Console.WriteLine($"Sending Modbus request, Correlation id: {x.CorrelationId}, Address: {x.Address}");
+                System.Console.WriteLine($"\nSending Modbus request, Correlation id: {x.CorrelationId}, Address: {x.Address}");
                 for(int i = 0; i < x.RequestLen; i++)
                 {
                     System.Console.Write($"{x.Request[i]} ");
                 }
                 System.Console.Write("\n");
+                x.Response = await SendRequest(x.Request, x.RequestLen);
+                if (x.Response != null)
+                {
+                    System.Console.WriteLine($"Response received for id: {x.CorrelationId}, {x.Address}.");
+                    foreach (var resp in x.Response)
+                    {
+                        System.Console.Write($"{resp} ");
+                    }
+                    System.Console.Write("\n");
+                }
 
                 if (x.Response != null)
                 {
