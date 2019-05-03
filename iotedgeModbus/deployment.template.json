@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus20": {
+          "modbus26": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus20/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus26/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus20": {
+    "modbus26": {
       "properties.desired": {
         "PublishInterval": "60000",
         "SlaveConfigs": {
@@ -113,54 +113,439 @@
             "HwId": "RusselLea Modbus Master",
             "RetryCount": "5",
             "RetryInterval": "10000",
-            "Operations": {
-              "Op10_70": {
-                 "PollingInterval": "10000",
+            "Operations": 
+            {
+              "Op2_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "2"
+              },
+              "Op2_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "2"
+              },
+              "Op2_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "2"
+              },
+              "Op2_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "2"
+              },
+              "Op2_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "2"
+              },
+              "Op2_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "2",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "2"
+              },
+              "Op3_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "3"
+              },
+              "Op3_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "3"
+              },
+              "Op3_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "3"
+              },
+              "Op3_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "3"
+              },
+              "Op3_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "3"
+              },
+              "Op3_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "3",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "3"
+              },
+              "Op4_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "4"
+              },
+              "Op4_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "4"
+              },
+              "Op4_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "4"
+              },
+              "Op4_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "4"
+              },
+              "Op4_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "4"
+              },
+              "Op4_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "4",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "4"
+              },
+              "Op5_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "5"
+              },
+              "Op5_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "5"
+              },
+              "Op5_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "5"
+              },
+              "Op5_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "5"
+              },
+              "Op5_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "5"
+              },
+              "Op5_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "5",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "5"
+              },
+              "Op6_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "6"
+              },
+              "Op6_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "6"
+              },
+              "Op6_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "6"
+              },
+              "Op6_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "6"
+              },
+              "Op6_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "6"
+              },
+              "Op6_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "6",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "6"
+              },
+              "Op7_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "7"
+              },
+              "Op7_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "7"
+              },
+              "Op7_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "7"
+              },
+              "Op7_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "7"
+              },
+              "Op7_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "7"
+              },
+              "Op7_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "7",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "7"
+              },
+              "Op8_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "8"
+              },
+              "Op8_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "8"
+              },
+              "Op8_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "8"
+              },
+              "Op8_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "8"
+              },
+              "Op8_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "8"
+              },
+              "Op8_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "8",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "8"
+              },
+              "Op9_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "9"
+              },
+              "Op9_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "9"
+              },
+              "Op9_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "9"
+              },
+              "Op9_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "9"
+              },
+              "Op9_071": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30071",
+                 "Count": "2",
+                 "DisplayName": "Frequency (Hz)",
+                 "CorrelationId": "9"
+              },
+              "Op9_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "9",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "9"
+              },
+              "Op10_049": {
+                 "PollingInterval": "60000",
+                 "UnitId": "10",
+                 "StartAddress": "30049",
+                 "Count": "2",
+                 "DisplayName": "Total Phase Currents (A)",
+                 "CorrelationId": "10"
+              },
+              "Op10_053": {
+                 "PollingInterval": "60000",
+                 "UnitId": "10",
+                 "StartAddress": "30053",
+                 "Count": "2",
+                 "DisplayName": "Total Active Power (W)",
+                 "CorrelationId": "10"
+              },
+              "Op10_057": {
+                 "PollingInterval": "60000",
+                 "UnitId": "10",
+                 "StartAddress": "30057",
+                 "Count": "2",
+                 "DisplayName": "Total Apparent Power (VA)",
+                 "CorrelationId": "10"
+              },
+              "Op10_061": {
+                 "PollingInterval": "60000",
+                 "UnitId": "10",
+                 "StartAddress": "30061",
+                 "Count": "2",
+                 "DisplayName": "Total Reactive Power (VAr)",
+                 "CorrelationId": "10"
+              },
+              "Op10_071": {
+                 "PollingInterval": "60000",
                  "UnitId": "10",
                  "StartAddress": "30071",
-                 "Count": "4",
+                 "Count": "2",
                  "DisplayName": "Frequency (Hz)",
                  "CorrelationId": "10"
               },
-              "Op10_71": {
-                "PollingInterval": "10000",
-                "UnitId": "10",
-                "StartAddress": "30070",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "10"
-              },
-              "Op02_48": {
-                "PollingInterval": "10000",
-                "UnitId": "2",
-                "StartAddress": "30049",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "2"
-              },
-              "Op02_49": {
-                "PollingInterval": "10000",
-                "UnitId": "2",
-                "StartAddress": "30048",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "2"
-              },
-              "Op04_56": {
-                "PollingInterval": "10000",
-                "UnitId": "4",
-                "StartAddress": "30057",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "4"
-              },
-              "Op04_57": {
-                "PollingInterval": "10000",
-                "UnitId": "4",
-                "StartAddress": "30056",
-                "Count": "4",
-                "DisplayName": "Frequency (Hz)",
-                "CorrelationId": "4"
+              "Op10_343": {
+                 "PollingInterval": "60000",
+                 "UnitId": "10",
+                 "StartAddress": "30343",
+                 "Count": "2",
+                 "DisplayName": "Total Active Energy (kWh)",
+                 "CorrelationId": "10"
               }
             }
           }
