@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus45": {
+          "modbus46": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus45/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus46/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus45": {
+    "modbus46": {
       "properties.desired": {
         "PublishInterval": "300000",
         "SlaveConfigs": {
@@ -115,56 +115,56 @@
             "RetryInterval": "10000",
             "Operations": {
                "Op2_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "150000",
                   "UnitId": "2",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "2"
                },
                "Op3_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "160000",
                   "UnitId": "3",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "3"
                },
                "Op4_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "170000",
                   "UnitId": "4",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "4"
                },
                "Op5_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "180000",
                   "UnitId": "5",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "5"
                },
                "Op6_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "190000",
                   "UnitId": "6",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "6"
                },
                "Op7_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "200000",
                   "UnitId": "7",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "7"
                },
                "Op8_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "210000",
                   "UnitId": "8",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "8"
                },
                "Op9_343": {
-                  "PollingInterval": "240000",
+                  "PollingInterval": "220000",
                   "UnitId": "9",
                   "StartAddress": "30343",
                   "Count": "2",
