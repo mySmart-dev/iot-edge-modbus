@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus43": {
+          "modbus45": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus43/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus45/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus43": {
+    "modbus45": {
       "properties.desired": {
         "PublishInterval": "300000",
         "SlaveConfigs": {
@@ -114,82 +114,12 @@
             "RetryCount": "5",
             "RetryInterval": "10000",
             "Operations": {
-               "Op2_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "2",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "2"
-               },
-               "Op2_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "2",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "2"
-               },
-               "Op2_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "2",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "2"
-               },
-               "Op2_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "2",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "2"
-               },
-               "Op2_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "2",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "2"
-               },
                "Op2_343": {
                   "PollingInterval": "240000",
                   "UnitId": "2",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "2"
-               },
-               "Op3_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "3",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "3"
-               },
-               "Op3_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "3",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "3"
-               },
-               "Op3_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "3",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "3"
-               },
-               "Op3_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "3",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "3"
-               },
-               "Op3_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "3",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "3"
                },
                "Op3_343": {
                   "PollingInterval": "240000",
@@ -198,82 +128,12 @@
                   "Count": "2",
                   "CorrelationId": "3"
                },
-               "Op4_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "4",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "4"
-               },
-               "Op4_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "4",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "4"
-               },
-               "Op4_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "4",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "4"
-               },
-               "Op4_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "4",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "4"
-               },
-               "Op4_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "4",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "4"
-               },
                "Op4_343": {
                   "PollingInterval": "240000",
                   "UnitId": "4",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "4"
-               },
-               "Op5_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "5",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "5"
-               },
-               "Op5_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "5",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "5"
-               },
-               "Op5_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "5",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "5"
-               },
-               "Op5_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "5",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "5"
-               },
-               "Op5_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "5",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "5"
                },
                "Op5_343": {
                   "PollingInterval": "240000",
@@ -282,82 +142,12 @@
                   "Count": "2",
                   "CorrelationId": "5"
                },
-               "Op6_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "6",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "6"
-               },
-               "Op6_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "6",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "6"
-               },
-               "Op6_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "6",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "6"
-               },
-               "Op6_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "6",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "6"
-               },
-               "Op6_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "6",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "6"
-               },
                "Op6_343": {
                   "PollingInterval": "240000",
                   "UnitId": "6",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "6"
-               },
-               "Op7_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "7",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "7"
-               },
-               "Op7_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "7",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "7"
-               },
-               "Op7_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "7",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "7"
-               },
-               "Op7_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "7",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "7"
-               },
-               "Op7_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "7",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "7"
                },
                "Op7_343": {
                   "PollingInterval": "240000",
@@ -366,82 +156,12 @@
                   "Count": "2",
                   "CorrelationId": "7"
                },
-               "Op8_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "8",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "8"
-               },
-               "Op8_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "8",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "8"
-               },
-               "Op8_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "8",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "8"
-               },
-               "Op8_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "8",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "8"
-               },
-               "Op8_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "8",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "8"
-               },
                "Op8_343": {
                   "PollingInterval": "240000",
                   "UnitId": "8",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "8"
-               },
-               "Op9_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "9",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "9"
-               },
-               "Op9_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "9",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "9"
-               },
-               "Op9_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "9",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "9"
-               },
-               "Op9_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "9",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "9"
-               },
-               "Op9_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "9",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "9"
                },
                "Op9_343": {
                   "PollingInterval": "240000",
@@ -450,89 +170,12 @@
                   "Count": "2",
                   "CorrelationId": "9"
                },
-               "Op10_049": {
-                  "PollingInterval": "240000",
-                  "UnitId": "10",
-                  "StartAddress": "30049",
-                  "Count": "2",
-                  "CorrelationId": "10"
-               },
-               "Op10_053": {
-                  "PollingInterval": "240000",
-                  "UnitId": "10",
-                  "StartAddress": "30053",
-                  "Count": "2",
-                  "CorrelationId": "10"
-               },
-               "Op10_057": {
-                  "PollingInterval": "240000",
-                  "UnitId": "10",
-                  "StartAddress": "30057",
-                  "Count": "2",
-                  "CorrelationId": "10"
-               },
-               "Op10_061": {
-                  "PollingInterval": "240000",
-                  "UnitId": "10",
-                  "StartAddress": "30061",
-                  "Count": "2",
-                  "CorrelationId": "10"
-               },
-               "Op10_071": {
-                  "PollingInterval": "240000",
-                  "UnitId": "10",
-                  "StartAddress": "30071",
-                  "Count": "2",
-                  "CorrelationId": "10"
-               },
                "Op10_343": {
                   "PollingInterval": "240000",
                   "UnitId": "10",
                   "StartAddress": "30343",
                   "Count": "2",
                   "CorrelationId": "10"
-               },
-               "Op11_948": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40949",
-                  "Count": "2",
-                  "CorrelationId": "11"
-               },
-               "Op11_793": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40794",
-                  "Count": "2",
-                  "CorrelationId": "11"
-               },
-               "Op11_801": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40802",
-                  "Count": "2",
-                  "CorrelationId": "11"
-               },
-               "Op11_797": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40798",
-                  "Count": "2",
-                  "CorrelationId": "11"
-               },
-               "Op11_805": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40806",
-                  "Count": "2",
-                  "CorrelationId": "11"
-               },
-               "Op11_825": {
-                  "PollingInterval": "240000",
-                  "UnitId": "11",
-                  "StartAddress": "40826",
-                  "Count": "1",
-                  "CorrelationId": "11"
                }
             }
           }
