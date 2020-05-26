@@ -64,7 +64,7 @@
           }
         },
         "modules": {
-          "modbus47": {
+          "modbus48": {
             "version": "1.0",
             "type": "docker",
             "status": "running",
@@ -91,14 +91,14 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "modbusToIoTHub": "FROM /messages/modules/modbus47/outputs/* INTO $upstream"
+          "modbusToIoTHub": "FROM /messages/modules/modbus48/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 10800
         }
       }
     },
-    "modbus47": {
+    "modbus48": {
       "properties.desired": {
         "PublishInterval": "300000",
         "SlaveConfigs": {
